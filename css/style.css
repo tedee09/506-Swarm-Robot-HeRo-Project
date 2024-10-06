@@ -1,0 +1,182 @@
+body {
+  background-color: #f9f9f9;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+p {
+  color: #555;
+}
+
+.img-thumbnail {
+  border-radius: 20px;
+  width: 150px;
+}
+
+.post-entry {
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.list-group-item {
+  border-radius: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: none;
+}
+
+.shadow-sm {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.shadow-lg {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+.border {
+  border: 2px solid #e0e0e0;
+}
+
+.rounded-4 {
+  border-radius: 20px;
+}
+
+.btn {
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.hero-section {
+  height: 700px;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.parallax {
+  background-image: url('parallax-image.jpg');
+  height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hover{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.hover:hover {
+  transform: translateY(-10px); /* Menggeser card ke atas saat hover */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.footer-area {
+  background-color: #e0e0e0;
+  padding: 1.5rem 0;
+}
+
+.footer-menu a {
+  margin-right: 15px;
+}
+
+.title-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-img {
+  width: 30%;
+  height: 300px;
+  background-color: #e9ecef;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6c757d;
+}
+
+.profile-details {
+  width: 65%;
+}
+
+.related-section {
+  margin-top: 4rem;
+}
+
+.related-section h5 {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.card {
+  margin: 1rem;
+}
+
+.horizontal-divider {
+  margin-top: 2rem;
+  border-top: 1px solid #6c757d;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.horizontal-divider::before, .horizontal-divider::after {
+  content: "";
+  display: inline-block;
+  width: 10%;
+  border-top: 2px solid #6c757d;
+}
+
+.horizontal-divider span {
+  padding: 0 1rem;
+  font-weight: bold;
+}
+
+hr.new4 {
+  border: 1px solid rgb(63, 63, 63);
+}
+
+
+.section-title {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
