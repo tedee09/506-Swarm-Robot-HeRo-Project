@@ -19,16 +19,17 @@
   
 - **Langkah 2:** Pastikan struktur folder Anda di dalam `htdocs` terlihat seperti ini:
 htdocs/
-    └── uts/
-        ├── css/
-        ├── images/
-        ├── js/
-        ├── bagian.php
-        ├── data_team.php
-        ├── index.php
-        ├── navbar.php
-        └── project.php
-            ├── ...
+├── uts/
+│   ├── css/
+│   ├── images/
+│   ├── js/
+│   ├── bagian.php
+│   ├── data_team.php
+│   ├── index.php
+│   ├── navbar.php
+│   ├── project.php
+│   └── ...
+
 
 ## 4. Menjalankan Proyek di Browser
 
