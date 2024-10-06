@@ -18,7 +18,7 @@
   - Misalnya, jika proyek Anda bernama `simple_web_project`, maka foldernya seharusnya berada di `C:\xampp\htdocs\simple_web_project`.
   
 - **Langkah 2:** Pastikan struktur folder Anda di dalam `htdocs` terlihat seperti ini:
-````
+```
 htdocs/
 ├── uts/
 │   ├── css/
@@ -30,7 +30,7 @@ htdocs/
 │   ├── navbar.php
 │   ├── project.php
 │   └── ...
-````
+```
 
 ## 4. Menjalankan Proyek di Browser
 
@@ -40,4 +40,4 @@ Gantilah `uts` dengan nama folder proyek Anda.
 
 - **Langkah 2:** Jika semuanya terkonfigurasi dengan benar, Anda akan melihat halaman utama proyek web Anda.
 
-# Dah itu aja kalo masih ga bisa chat aja, males kalo jelasin lagi disini 
+# DAH ITU AJA KALO MASIH GA BISA CHAT AJA, MALES KALO JELASIN LAGI DISINI 
