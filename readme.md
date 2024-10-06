@@ -19,34 +19,23 @@
   
 - **Langkah 2:** Pastikan struktur folder Anda di dalam `htdocs` terlihat seperti ini:
 htdocs/
-    └── simple_web_project/
-        ├── index.php
+    └── uts/
+        ├── css/
+        ├── images/
+        ├── js/
         ├── bagian.php
-        ├── project.php
-        ├── style.css
-        └── images/
+        ├── data_team.php
+        ├── index.php
+        ├── navbar.php
+        └── project.php
             ├── ...
 
 ## 4. Menjalankan Proyek di Browser
 
 - **Langkah 1:** Buka browser Anda (Chrome, Firefox, dll.) dan masukkan URL berikut:
-http://localhost/simple_web_project/index.php
-Gantilah `simple_web_project` dengan nama folder proyek Anda.
+http://localhost/uts/index.php
+Gantilah `uts` dengan nama folder proyek Anda.
 
 - **Langkah 2:** Jika semuanya terkonfigurasi dengan benar, Anda akan melihat halaman utama proyek web Anda.
 
-## 5. Mengatasi Masalah Umum
-
-- **Masalah Apache Tidak Berjalan:**
-- Pastikan tidak ada aplikasi lain yang menggunakan port 80 (seperti Skype). Anda bisa mengubah port Apache di file konfigurasi `httpd.conf` jika perlu.
-
-- **Error 404:**
-- Pastikan path yang dimasukkan di browser benar dan folder proyek ada di dalam direktori `htdocs`.
-
-## 6. Meng-upload ke GitHub
-
-- **Langkah 1:** Buat repositori baru di [GitHub](https://github.com/).
-- **Langkah 2:** Pada komputer Anda, buka terminal atau command prompt.
-- **Langkah 3:** Arahkan ke folder proyek Anda:
-```bash
-cd C:\xampp\htdocs\simple_web_project
+# Dah itu aja kalo masih ga bisa chat aja, males kalo jelasin lagi disini 
