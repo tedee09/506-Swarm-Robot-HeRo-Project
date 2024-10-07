@@ -15,7 +15,7 @@
 ## 3. Menyiapkan Proyek Web Anda
 
 - **Langkah 1:** Salin folder proyek web Anda (yang berisi file PHP, HTML, CSS, dll.) ke dalam direktori `htdocs` di dalam folder instalasi XAMPP. Biasanya, path-nya adalah `C:\xampp\htdocs\`.
-  - Misalnya, jika proyek Anda bernama `simple_web_project`, maka foldernya seharusnya berada di `C:\xampp\htdocs\simple_web_project`.
+  - Misalnya, jika proyek Anda bernama `uts`, maka foldernya seharusnya berada di `C:\xampp\htdocs\uts`.
   
 - **Langkah 2:** Pastikan struktur folder Anda di dalam `htdocs` terlihat seperti ini:
 ```
