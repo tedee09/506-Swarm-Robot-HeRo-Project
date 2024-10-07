@@ -36,7 +36,7 @@ htdocs/
 
 - **Langkah 1:** Buka browser Anda (Chrome, Firefox, dll.) dan masukkan URL berikut:
 http://localhost/uts/index.php
-Gantilah `uts` dengan nama folder proyek Anda.
+Gantilah `uts` dengan nama folder proyek Anda jika nama foldernya berbeda, kalau sama lanjut aja.
 
 - **Langkah 2:** Jika semuanya terkonfigurasi dengan benar, Anda akan melihat halaman utama proyek web Anda.
 
