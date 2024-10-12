@@ -12,6 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href=<?php echo strtoupper($project['icon']);?>>
         <title><?php echo $project['nama_robot']; ?> - Project</title>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -137,7 +138,7 @@
                 <?php foreach($data as $team): ?>
                 <div class="col-12 col-md-6 col-lg-3 mb-5 mb-md-0 rounded-2 hover">
                     <div class="my-2">
-                        <img src="images/person.jpg" class="img-fluid mb-4 rounded-4 shadow">
+                        <img src=<?php echo $team['foto']?> class="img-fluid mb-4 rounded-4 shadow">
                         <h3><a class="link-secondary link-offset-2 link-underline-opacity-0" href="#"><?php echo ucwords($team['nama'])?></a></h3>
                         <span class="d-block position mb-4"><?php echo $team['nim'] . " | " . ucwords($team['bagian'])?></span>
                         <p><?php echo $team['deskripsi']?></p>
