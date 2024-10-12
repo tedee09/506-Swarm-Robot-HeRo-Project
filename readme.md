@@ -15,38 +15,29 @@
 ## 3. Menyiapkan Proyek Web Anda
 
 - **Langkah 1:** Salin folder proyek web Anda (yang berisi file PHP, HTML, CSS, dll.) ke dalam direktori `htdocs` di dalam folder instalasi XAMPP. Biasanya, path-nya adalah `C:\xampp\htdocs\`.
-  - Misalnya, jika proyek Anda bernama `simple_web_project`, maka foldernya seharusnya berada di `C:\xampp\htdocs\simple_web_project`.
+  - Misalnya, jika proyek Anda bernama `uts`, maka foldernya seharusnya berada di `C:\xampp\htdocs\uts`.
   
 - **Langkah 2:** Pastikan struktur folder Anda di dalam `htdocs` terlihat seperti ini:
+```
 htdocs/
-    └── simple_web_project/
-        ├── index.php
-        ├── bagian.php
-        ├── project.php
-        ├── style.css
-        └── images/
-            ├── ...
+├── uts/
+│   ├── css/
+│   ├── images/
+│   ├── js/
+│   ├── bagian.php
+│   ├── data_team.php
+│   ├── index.php
+│   ├── navbar.php
+│   ├── project.php
+│   └── ...
+```
 
 ## 4. Menjalankan Proyek di Browser
 
 - **Langkah 1:** Buka browser Anda (Chrome, Firefox, dll.) dan masukkan URL berikut:
-http://localhost/simple_web_project/index.php
-Gantilah `simple_web_project` dengan nama folder proyek Anda.
+http://localhost/uts/index.php
+Gantilah `uts` dengan nama folder proyek Anda jika nama foldernya berbeda, kalau sama lanjut aja.
 
 - **Langkah 2:** Jika semuanya terkonfigurasi dengan benar, Anda akan melihat halaman utama proyek web Anda.
 
-## 5. Mengatasi Masalah Umum
-
-- **Masalah Apache Tidak Berjalan:**
-- Pastikan tidak ada aplikasi lain yang menggunakan port 80 (seperti Skype). Anda bisa mengubah port Apache di file konfigurasi `httpd.conf` jika perlu.
-
-- **Error 404:**
-- Pastikan path yang dimasukkan di browser benar dan folder proyek ada di dalam direktori `htdocs`.
-
-## 6. Meng-upload ke GitHub
-
-- **Langkah 1:** Buat repositori baru di [GitHub](https://github.com/).
-- **Langkah 2:** Pada komputer Anda, buka terminal atau command prompt.
-- **Langkah 3:** Arahkan ke folder proyek Anda:
-```bash
-cd C:\xampp\htdocs\simple_web_project
+# DAH ITU AJA KALO MASIH GA BISA CHAT AJA, MALES KALO JELASIN LAGI DISINI 
