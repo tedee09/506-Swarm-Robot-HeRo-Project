@@ -17,7 +17,8 @@
         $dataPBL = array(
             'pbl'=>'Project Base Learning',
             'nama_robot'=>'HeRo',
-            'gambar_hero'=>'images/cad/hero.jpg',
+            'gambar_hero'=>'images/hero.png',
+            'icon'=>'images/icon.ico',
             'deskripsi'=>'Proyek HeRo adalah bagian dari pendekatan Project-Based Learning (PBL), yang berfokus pada pengembangan sistem robotika berkelompok (swarm robot) untuk menyelesaikan masalah nyata melalui kolaborasi. Dalam PBL ini, Mahasisiswa belajar dengan cara mengerjakan proyek yang terstruktur, di mana setiap tahap memberikan wawasan langsung mengenai desain, pengembangan, dan implementasi teknologi swarm robotika.',
             'jenis_robot'=>'swarm robot',
             'latar_belakang'=>'Swarm robotik adalah cabang robotika yang mengadaptasi prinsip-prinsip koloni hewan, seperti serangga sosial, untuk mengembangkan sistem robot yang mampu berkolaborasi secara otonom, Proyek ini memberikan kesempatan untuk belajar tentang algoritma navigasi, komunikasi antar robot, dan manajemen sumber daya dalam konteks swarm.',
@@ -179,9 +180,8 @@
                             'sebagai'=>'framework'
                         )
                     ),
-                    'design'=>array(
-                        'flowchart'=>'images/programming/flowchart.jpg'
-                    )
+                    'flowchart'=>'images/programming/flowchart.jpg',
+                    'dsystem'=>'images/programming/dsystem.jpg'
                 ),
             ),
             'features'=> array(

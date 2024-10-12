@@ -12,41 +12,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link rel="shortcut icon" href=<?php echo strtoupper($project['icon']);?>>
         <title><?php echo $project['nama_robot']; ?> - Project</title>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body class="bg-light">
 
         <!-- Navigation Menu -->
-        <nav class="navbar fixed-top bg-body-tertiary navbar-expand-lg bg-dark" data-bs-theme="dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#hero"><?php echo strtoupper($project['jenis_robot']." ".$project['nama_robot']);?></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#tujuan">Tujuan</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#manfaat">Manfaat</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#bagian">Bagian</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <?php include 'navbar.php'; ?>
         <!-- End Navigation Menu --> 
 
         <!-- Hero Section -->
         <section class="hero-section text-center" id="hero">
             <div class="container">
                 <div class="row justify-content-between align-items-center">
-                    <div class="col-lg-6 text-lg-start text-center">
-                        <h1 class="display-2 fw-bold text-uppercase text-dark mb-5"><?php echo strtoupper($project['jenis_robot']);?></h1>
+                    <div class="col-lg-6 col-sm-6 col-md-4 text-lg-start text-center">
+                        <h1 class="display-2 fw-bold text-uppercase text-dark"><?php echo strtoupper($project['jenis_robot']);?></h1>
+                        <h1 class="display-2 fw-bold text-uppercase text-dark mb-5"><?php echo strtoupper($project['nama_robot']);?></h1>
                         <p class="mb-4"><?php echo $project['latar_belakang'];?></p>
                     </div>
                     <div class="col-lg-6 d-flex justify-content-lg-end justify-content-center">
-                        <img src="<?php echo $project['gambar_hero']; ?>" class="img-fluid w-100">
+                        <img src="<?php echo $project['gambar_hero']; ?>" class="img-fluid w-75">
                     </div>  
                 </div>
             </div>
@@ -63,7 +49,7 @@
                     ?>
                         <li class='list-group-item border-0 text-dark my-2 hover'>
                             <?php echo $tujuan; ?>
-                        </li>  
+                        </li>
                     <?php
                         }
                     ?>

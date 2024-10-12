@@ -3,12 +3,12 @@ body {
   font-family: 'Arial', sans-serif;
 }
 
-.container {
+/* .container {
   background-color: #fff;
   border-radius: 20px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   padding: 40px;
-}
+} */
 
 h1, h2 {
   color: #333;
@@ -179,4 +179,31 @@ hr.new4 {
   margin-bottom: 1rem;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.question {
+  background-color: #ffeb3b;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.question-number {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+.question-text {
+  flex-grow: 1;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  h1.display-2 {
+      font-size: 2rem;
+  }
 }

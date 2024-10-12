@@ -1,21 +1,24 @@
 <?php
-// Tentukan warna berdasarkan bagian
-$navbarClass = 'bg-dark'; // Default color
-if ($bagian == 'elektrikal') {
-    $navbarClass = 'bg-danger'; // Merah untuk elektrikal
-} elseif ($bagian == 'mekanikal') {
-    $navbarClass = 'bg-success'; // Hijau untuk mekanikal
-} elseif ($bagian == 'programming') {
-    $navbarClass = 'bg-info'; // Biru untuk programming
+$navbarClass = 'background-color: #f5f5f5'; // Default color
+
+if (isset($bagian)) {
+    if ($bagian == 'elektrikal') {
+        $navbarClass = 'bg-danger'; // Merah untuk elektrikal
+    } elseif ($bagian == 'mekanikal') {
+        $navbarClass = 'bg-success'; // Hijau untuk mekanikal
+    } elseif ($bagian == 'programming') {
+        $navbarClass = 'bg-info'; // Biru untuk programming
+    }
 }
 ?>
 
+
 <!-- Navigation Menu -->
-<nav class="navbar fixed-top <?php echo $navbarClass; ?> navbar-expand-lg" data-bs-theme="dark">
+<nav class="navbar fixed-top <?php echo $navbarClass; ?> navbar-expand-lg">
     <div class="container-fluid">
-        <a class="navbar-brand" href="index.php"><?php echo strtoupper($project['jenis_robot']." ".$project['nama_robot']); ?></a>
+        <a class="navbar-brand" href="index.php"><?php echo $project['nama_robot']; ?></a>
     </div>
-    <?php if ($bagian == 'elektrikal' || $bagian == 'mekanikal' || $bagian == 'programming') { ?>
+    <?php if (isset($bagian) && ($bagian == 'elektrikal' || $bagian == 'mekanikal' || $bagian == 'programming')) { ?>
         <a class="navbar-brand ms-auto" href="index.php #bagian">Kembali</a>
     <?php } else { ?>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

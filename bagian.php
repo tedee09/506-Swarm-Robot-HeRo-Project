@@ -251,14 +251,18 @@
                         <h2 class="fw-bold link-offset-2 link-underline link-underline-opacity-0 link-light">Flowchart</h2>
                     </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                            <div class="row">
-                                <?php foreach ($dataBagian['design'] as $design) { ?>
-                                    <div class="col-md-12 mb-3">
-                                        <img src="<?php echo $design; ?>" alt="design" class="img-fluid rounded-4 shadow-sm">
-                                    </div>
-                                <?php } ?>
-                            </div>
+                        <li class="list-group-item text-center">
+                            <img src="<?php echo $dataBagian['flowchart']; ?>" alt="Flowchart" class="img-fluid rounded-4 shadow-sm">
+                        </li>
+                    </ul>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header bg-info text-white">
+                        <h2 class="fw-bold link-offset-2 link-underline link-underline-opacity-0 link-light">Desain Sistem</h2>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item text-center">
+                            <img src="<?php echo $dataBagian['dsystem']; ?>" alt="Desain Sistem" class="img-fluid rounded-4 shadow-sm">
                         </li>
                     </ul>
                 </div>
