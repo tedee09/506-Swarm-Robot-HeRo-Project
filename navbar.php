@@ -16,7 +16,7 @@ if (isset($bagian)) {
 <!-- Navigation Menu -->
 <nav class="navbar fixed-top <?php echo $navbarClass; ?> navbar-expand-lg">
     <div class="container-fluid">
-        <a class="navbar-brand" href="index.php"><?php echo $project['nama_robot']; ?></a>
+        <a class="navbar-brand" href="index.php #hero"><?php echo $project['nama_robot']; ?></a>
     </div>
     <?php if (isset($bagian) && ($bagian == 'elektrikal' || $bagian == 'mekanikal' || $bagian == 'programming')) { ?>
         <a class="navbar-brand ms-auto" href="index.php #bagian">Kembali</a>
