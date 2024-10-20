@@ -1,13 +1,13 @@
 <?php
-$navbarClass = '#f5f5f5'; // Default color
+$navbarClass = '#f5f5f5';
 
 if (isset($bagian)) {
     if ($bagian == 'elektrikal') {
-        $navbarClass = 'bg-danger'; // Merah untuk elektrikal
+        $navbarClass = 'bg-danger';
     } elseif ($bagian == 'mekanikal') {
-        $navbarClass = 'bg-success'; // Hijau untuk mekanikal
+        $navbarClass = 'bg-success';
     } elseif ($bagian == 'programming') {
-        $navbarClass = 'bg-info'; // Biru untuk programming
+        $navbarClass = 'bg-info';
     }
 }
 ?>

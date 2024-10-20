@@ -1,19 +1,15 @@
 <?php
     include_once('project.php');
 
-    // Ambil query parameter 'bagian' dari URL
     $bagian = isset($_GET['bagian']) ? $_GET['bagian'] : 'mekanikal'; // Default ke 'programming' jika tidak ada parameter
 
-    // Ambil data project
     $project = pbl();
 
-    // Pastikan bagian yang diminta ada di data
     if (!isset($project['bagian'][$bagian])) {
         echo "Bagian tidak ditemukan!";
         exit;
     }
 
-    // Ambil data bagian yang sesuai
     $dataBagian = $project['bagian'][$bagian];
 ?>
 
@@ -23,7 +19,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet"> <!-- Custom CSS file -->
+        <link href="css/style.css" rel="stylesheet">
         <title>Detail Bagian <?php echo ucfirst($bagian); ?></title>
     </head>
     <body class="p-3 m-0">
@@ -41,21 +37,16 @@
                 </div>
             </div>
 
-            <!-- Penanggung Jawab Section with Cards and Border -->
             <h2 class="fw-bold mb-4">Penanggung Jawab</h2>
             <?php
-                // Dapatkan data tim
                 $dataTeam = team();
-                // Dapatkan bagian penanggung jawab
-                $bagianPenanggungJawab = $bagian; // Gunakan bagian dari URL
+                $bagianPenanggungJawab = $bagian;
 
-                // Array untuk menyimpan anggota tim yang sesuai
                 $penanggungJawabArray = array();
 
-                // Temukan data anggota tim berdasarkan bagian
                 foreach ($dataTeam as $member) {
                     if ($member['bagian'] === $bagianPenanggungJawab) {
-                        $penanggungJawabArray[] = $member; // Tambahkan anggota tim yang cocok ke dalam array
+                        $penanggungJawabArray[] = $member;
                     }
                 }
             ?>
@@ -191,7 +182,6 @@
                         <li class="list-group-item">
                             <div class="row">
                                 <?php
-                                // Array untuk deskripsi gambar CAD
                                 $deskripsiCAD = [
                                     'cadTop' => 'Atas',
                                     'cadBottom' => 'Bawah',
@@ -201,12 +191,11 @@
                                     'cadLeft' => 'Kiri'
                                 ];
 
-                                // Loop untuk menampilkan gambar CAD dari berbagai sudut
                                 foreach ($deskripsiCAD as $key => $deskripsi) {
                                 ?>
                                     <div class="col-md-4 mb-3 text-center">
                                         <img src="<?php echo $dataBagian['cad']['gambar'][$key]; ?>" alt="Gambar CAD <?php echo $deskripsi; ?>" class="img-fluid rounded-4 shadow-sm">
-                                        <p class="mt-2 fw-bold"><?php echo $deskripsi; ?></p> <!-- Teks deskripsi gambar -->
+                                        <p class="mt-2 fw-bold"><?php echo $deskripsi; ?></p>
                                     </div>
                                 <?php } ?>
                             </div>
