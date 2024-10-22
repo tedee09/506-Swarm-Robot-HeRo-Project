@@ -19,8 +19,8 @@
                 'foto'=>'images/team/antonius.jpg',
                 'nama'=>'antonius',
                 'nim'=>'4222201059',
-                'bagian'=>'mekanikal',
-                'deskripsi'=>'Bertanggung jawab dalam merancang dan membangun struktur mekanik robot, termasuk pergerakan dan desain fisik.'
+                'bagian'=>'programming',
+                'deskripsi'=>'Mengembangkan dan mengimplementasikan algoritma kontrol, pemrosesan sinyal, dan komunikasi antar robot.'
             ),
             'tedy'=> array(
                 'foto'=>'images/team/tedy.jpg',

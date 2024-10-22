@@ -29,6 +29,7 @@ if (isset($bagian)) {
                 <li class="nav-item"><a class="nav-link" href="#tujuan">Tujuan</a></li>
                 <li class="nav-item"><a class="nav-link" href="#manfaat">Manfaat</a></li>
                 <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                <li class="nav-item"><a class="nav-link" href="#dokumen">Dokumen</a></li>
                 <li class="nav-item"><a class="nav-link" href="#bagian">Bagian</a></li>
                 <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
             </ul>

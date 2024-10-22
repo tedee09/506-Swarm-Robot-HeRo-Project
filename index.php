@@ -103,6 +103,28 @@
             </div>
         </section>
         <!-- End Features -->
+
+        <!-- Dokumen PBL -->
+        <section class="container my-5" id="dokumen">
+             <div class="bg-white shadow-sm rounded-4 p-4 border border-dark">
+                 <h2 class="fw-bold text-center">DOKUMEN</h2>
+                 <ul class="list-group list-group-flush mt-3">
+                     <?php
+                         foreach ($project['dokumen'] as $dokumen) {
+                     ?>
+                         <a href="<?php echo $dokumen['file']; ?>" class="text-decoration-none text-dark" target="_blank">
+                            <li class='list-group-item border-0 text-dark my-2 hover'>
+                                <h4 class="fw-bold"><?php echo $dokumen['nama']; ?></h4>
+                                <p><?php echo $dokumen['deskripsi']; ?></p>
+                            </li>
+                         </a>
+                     <?php
+                         }
+                     ?>
+                 </ul>
+             </div>
+         </section>
+        <!-- End Dokumen PBL -->
         
         <!-- Bagian Tim -->
         <section class="container" id="bagian">

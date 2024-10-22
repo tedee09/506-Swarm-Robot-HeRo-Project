@@ -3,18 +3,6 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
-/* .container {
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  padding: 40px;
-  
-} */
-
 h1, h2 {
   color: #333;
 }
@@ -26,10 +14,6 @@ p {
 .img-thumbnail {
   border-radius: 20px;
   width: 150px;
-}
-
-.post-entry {
-  margin-bottom: 1.5rem;
 }
 
 .card {
@@ -47,29 +31,6 @@ p {
   color: #333;
 }
 
-.list-group-item {
-  border-radius: 20px;
-  padding: 15px;
-  background-color: #f9f9f9;
-  border: none;
-}
-
-.shadow-sm {
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.shadow-lg {
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
-}
-
-.border {
-  border: 2px solid #e0e0e0;
-}
-
-.rounded-4 {
-  border-radius: 20px;
-}
-
 .btn {
   border-radius: 30px;
   padding: 10px 20px;
@@ -85,19 +46,9 @@ p {
   padding: 50px 0;
 }
 
-.parallax {
-  background-image: url('parallax-image.jpg');
-  height: 200px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.hover{
+.hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 .hover:hover {
   transform: translateY(-10px);
@@ -107,15 +58,6 @@ p {
 .footer-area {
   background-color: #e0e0e0;
   padding: 1.5rem 0;
-}
-
-.footer-menu a {
-  margin-right: 15px;
-}
-
-.title-section {
-  text-align: center;
-  margin-bottom: 3rem;
 }
 
 .profile-container {
@@ -138,21 +80,6 @@ p {
 
 .profile-details {
   width: 65%;
-}
-
-.related-section {
-  margin-top: 4rem;
-}
-
-.related-section h5 {
-  margin-bottom: 2rem;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
-.card {
-  margin: 1rem;
 }
 
 .horizontal-divider {
@@ -178,33 +105,11 @@ hr.new4 {
   border: 1px solid rgb(63, 63, 63);
 }
 
-
 .section-title {
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-weight: bold;
   text-transform: uppercase;
-}
-
-.question {
-  background-color: #ffeb3b;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-}
-.question-number {
-  background-color: black;
-  color: white;
-  padding: 10px;
-  border-radius: 5px;
-  margin-right: 10px;
-  font-weight: bold;
-}
-.question-text {
-  flex-grow: 1;
-  text-align: left;
 }
 
 @media (max-width: 768px) {

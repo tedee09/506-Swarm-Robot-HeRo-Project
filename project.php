@@ -35,6 +35,18 @@
                 'Karena berbasis perangkat keras dan perangkat lunak terbuka, HeRo memungkinkan modifikasi dan pengembangan lebih lanjut untuk berbagai keperluan riset dan aplikasi praktis.',
                 'Dengan algoritma manajemen sumber daya yang efisien dan pengaturan daya baterai, proyek ini memberikan solusi robotik dengan durasi operasi yang panjang.'
             ),
+            'dokumen'=> array(
+                array(
+                    'nama' => 'RPP Swarm Robot',
+                    'file' => 'dokumen/RPP SWARM 5.0.docx',
+                    'deskripsi' => 'Dokumen mengenai RPP dari PBL Swarm Robot.'
+                ),
+                array(
+                    'nama' => 'BHP Proyek Swarm Robot',
+                    'file' => 'dokumen/BHP Swarm Robot.xlsx',
+                    'deskripsi' => 'Dokumen berisi biaya untuk komponen swarm robot HeRo.'
+                )
+            ),
             'bagian'=>array(
                 'elektrikal'=>array(
                     'penanggung_jawab'=>$tanggung_jawab['elektrikal'],
@@ -230,12 +242,7 @@
                     'penjelasan' => 'Memungkinkan pengujian dan pengembangan algoritma dalam lingkungan simulasi 3D.'
                 )
             ),
-            'color_Web'=>array(
-                '60%'=>'F6F5F5',
-                '30%'=>'FFE3CA',
-                '10%'=>'0C359E'
-            ),
-            'bagian_team'=>$dataTeam
+            'bagian_team'=>$dataTeam,
         );
         return $dataPBL;
     } 
