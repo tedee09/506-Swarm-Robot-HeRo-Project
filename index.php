@@ -138,7 +138,7 @@
                 <?php foreach($project['bagian'] as $bagian => $detail): ?>
                     <div class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0">
                         <div class="post-entry bg-white shadow-sm rounded-4 p-4 border border-dark hover">
-                            <a href="bagian.php?bagian=<?php echo urlencode($bagian); ?>" class="post-thumbnail"><img src="images/<?php echo strtolower($bagian); ?>.jpg" alt="Image" class="img-fluid"></a>
+                            <a href="bagian.php?bagian=<?php echo $bagian; ?>" class="post-thumbnail"><img src="images/<?php echo strtolower($bagian); ?>.jpg" alt="Image" class="img-fluid"></a>
                             <div class="post-content-entry mt-3">
                                 <h3><a class="link-secondary link-offset-2 link-underline-opacity-0" href="bagian.php?bagian=<?php echo $bagian; ?>"><?php echo strtoupper($bagian); ?></a></h3>
                             </div>
